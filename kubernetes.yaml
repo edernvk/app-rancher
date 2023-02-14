@@ -20,7 +20,7 @@ items:
         spec:
           containers:
             - name: api
-              image: minvar/sample-api
+              image: ederpfonseca/nginx
               ports:
                 - containerPort: 8000
 
