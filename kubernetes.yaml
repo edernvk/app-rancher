@@ -35,17 +35,3 @@ items:
         - protocol: TCP
           port: 80
           targetPort: 8000
-
-  - apiVersion: extensions/v1beta1
-    kind: Ingress
-    metadata:
-      name: api-ingress
-    spec:
-      rules:
-        - host: api.varkalys.com
-          http:
-            paths:
-              - path: /
-                backend:
-                  serviceName: api-service
-                  servicePort: 80
