@@ -21,3 +21,5 @@ jobs:
           KUBE_HOST: rancher.novakio.tech
         with:
           args: apply -f _rancher/deployment.yaml
+
+#
