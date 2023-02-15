@@ -1,0 +1,15 @@
+#DEVOPS - Deploy Git Action in Rancher v1.0.0
+#Novakio
+#Devops: Eder
+
+name: Deploy Dev K8S - v1
+
+on:
+  push:
+    branches: [ "dev-on" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
